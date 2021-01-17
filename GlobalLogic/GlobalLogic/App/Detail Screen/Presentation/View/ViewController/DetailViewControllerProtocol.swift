@@ -5,6 +5,6 @@
 //  Created by Gonzalo Ivan Fuentes on 17/01/2021.
 //
 
-protocol DetailViewControllerProtocol: BaseViewControllerProtocol {
+protocol DetailViewControllerProtocol: AnyObject {
     func setupView(_ song: SongModel)
 }
