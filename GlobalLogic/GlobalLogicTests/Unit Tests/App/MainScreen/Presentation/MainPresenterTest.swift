@@ -65,6 +65,7 @@ private extension MainPresenterTests {
         XCTAssertEqual(presenter.songsList[0].collectionName, "collection")
         XCTAssertEqual(presenter.songsList[0].trackName, "track")
         XCTAssertEqual(presenter.songsList[0].trackViewUrl, "url")
+        XCTAssertEqual(presenter.songsList[0].previewUrl, "url")
     }
 
     func assertMoreDataRequestedNotReloading() {

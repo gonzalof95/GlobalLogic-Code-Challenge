@@ -22,7 +22,8 @@ class SongMockModel {
         let songMock = SongModel(artistName: "artist",
                                  collectionName: "collection",
                                  trackName: "track",
-                                 trackViewUrl: "url")
+                                 trackViewUrl: "url",
+                                 previewUrl: "url")
         let songResponseMock = SongsResponseModel(resultCount: 1, results: [songMock])
 
         return songResponseMock

@@ -52,6 +52,8 @@
 		CEE0B09F25B478EB00D1B3A3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B09E25B478EB00D1B3A3 /* DetailViewController.swift */; };
 		CEE0B0A425B47CB400D1B3A3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B0A325B47CB400D1B3A3 /* DetailView.swift */; };
 		CEE0B0AC25B4BFA400D1B3A3 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B0AB25B4BFA400D1B3A3 /* CustomButton.swift */; };
+		CEE0B0B325B4CDB500D1B3A3 /* DetailViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B0B225B4CDB400D1B3A3 /* DetailViewControllerMock.swift */; };
+		CEE0B0BB25B4CDC400D1B3A3 /* DetailPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B0BA25B4CDC400D1B3A3 /* DetailPresenterTest.swift */; };
 		D0D8E258B4757E35257AD836 /* Pods_GlobalLogic_GlobalLogicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271A9ABC33960C545F8542D9 /* Pods_GlobalLogic_GlobalLogicUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +132,8 @@
 		CEE0B09E25B478EB00D1B3A3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CEE0B0A325B47CB400D1B3A3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		CEE0B0AB25B4BFA400D1B3A3 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		CEE0B0B225B4CDB400D1B3A3 /* DetailViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerMock.swift; sourceTree = "<group>"; };
+		CEE0B0BA25B4CDC400D1B3A3 /* DetailPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenterTest.swift; sourceTree = "<group>"; };
 		DA27CB9E26282A617F0F1635 /* Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig"; path = "Target Support Files/Pods-GlobalLogic-GlobalLogicUITests/Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -459,6 +463,7 @@
 			children = (
 				CEE0B05425B3E8D500D1B3A3 /* Networking */,
 				CEE0B05325B3E8CE00D1B3A3 /* MainScreen */,
+				CEE0B0B025B4CD9500D1B3A3 /* DetailScreen */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -529,8 +534,6 @@
 		CEE0B08A25B4783700D1B3A3 /* Detail Screen */ = {
 			isa = PBXGroup;
 			children = (
-				CEE0B08D25B4785A00D1B3A3 /* Core */,
-				CEE0B08C25B4785300D1B3A3 /* Infrastructure */,
 				CEE0B08B25B4784900D1B3A3 /* Presentation */,
 			);
 			path = "Detail Screen";
@@ -543,20 +546,6 @@
 				CEE0B08E25B4786200D1B3A3 /* Presenter */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		CEE0B08C25B4785300D1B3A3 /* Infrastructure */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Infrastructure;
-			sourceTree = "<group>";
-		};
-		CEE0B08D25B4785A00D1B3A3 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		CEE0B08E25B4786200D1B3A3 /* Presenter */ = {
@@ -583,6 +572,23 @@
 				CEE0B09E25B478EB00D1B3A3 /* DetailViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CEE0B0B025B4CD9500D1B3A3 /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0B0B125B4CDA200D1B3A3 /* Presentation */,
+			);
+			path = DetailScreen;
+			sourceTree = "<group>";
+		};
+		CEE0B0B125B4CDA200D1B3A3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0B0B225B4CDB400D1B3A3 /* DetailViewControllerMock.swift */,
+				CEE0B0BA25B4CDC400D1B3A3 /* DetailPresenterTest.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -858,10 +864,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE0B07725B3EC7300D1B3A3 /* SongsServiceTest.swift in Sources */,
+				CEE0B0BB25B4CDC400D1B3A3 /* DetailPresenterTest.swift in Sources */,
 				CEE0B07225B3EACC00D1B3A3 /* SongsRepositoryProtocolTest.swift in Sources */,
 				CEE0B05B25B3E90900D1B3A3 /* SongsMockModel.swift in Sources */,
 				CEE0B06325B3E94B00D1B3A3 /* NetworkServiceTest.swift in Sources */,
 				CEE0B06825B3E95600D1B3A3 /* NetworkServiceMock.swift in Sources */,
+				CEE0B0B325B4CDB500D1B3A3 /* DetailViewControllerMock.swift in Sources */,
 				CEE0B06D25B3EAC200D1B3A3 /* SongsRepositoryProtocolMock.swift in Sources */,
 				CEE0B07C25B3EC7F00D1B3A3 /* SongsServiceProtocolMock.swift in Sources */,
 				CEE0B08625B470AF00D1B3A3 /* MainPresenterTest.swift in Sources */,
