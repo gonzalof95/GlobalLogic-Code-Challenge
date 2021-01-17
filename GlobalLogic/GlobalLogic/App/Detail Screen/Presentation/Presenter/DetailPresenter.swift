@@ -18,6 +18,6 @@ class DetailPresenter {
     }
 
     func viewLoaded() {
-
+        delegate?.setupView(song)
     }
 }

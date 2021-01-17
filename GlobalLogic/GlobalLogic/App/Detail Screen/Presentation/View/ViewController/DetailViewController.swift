@@ -11,6 +11,7 @@ import PureLayout
 class DetailViewController: BaseViewController {
     var presenter: DetailPresenter?
     var songData: SongModel
+    var detailView: DetailView?
 
     init(with presenter: DetailPresenter, songData: SongModel) {
         self.songData = songData
@@ -33,10 +34,21 @@ class DetailViewController: BaseViewController {
         setNavBar(.customColorMain)
         setScreenTitle()
     }
+
+    private func setupViewValues(song: SongModel) {
+        songData = song
+
+        self.detailView = DetailView()
+        guard let strongCustomView = detailView else { return }
+
+        strongCustomView.configure(song: song)
+        view.addSubview(strongCustomView)
+        detailView?.autoPinEdgesToSuperviewEdges()
+    }
 }
 
 extension DetailViewController: DetailViewControllerProtocol {
     func setupView(_ song: SongModel) {
-
+        setupViewValues(song: song)
     }
 }

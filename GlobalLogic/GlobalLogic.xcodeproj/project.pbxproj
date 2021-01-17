@@ -50,6 +50,7 @@
 		CEE0B09125B478CC00D1B3A3 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B09025B478CC00D1B3A3 /* DetailPresenter.swift */; };
 		CEE0B09A25B478E300D1B3A3 /* DetailViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B09925B478E300D1B3A3 /* DetailViewControllerProtocol.swift */; };
 		CEE0B09F25B478EB00D1B3A3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B09E25B478EB00D1B3A3 /* DetailViewController.swift */; };
+		CEE0B0A425B47CB400D1B3A3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B0A325B47CB400D1B3A3 /* DetailView.swift */; };
 		D0D8E258B4757E35257AD836 /* Pods_GlobalLogic_GlobalLogicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271A9ABC33960C545F8542D9 /* Pods_GlobalLogic_GlobalLogicUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +127,7 @@
 		CEE0B09025B478CC00D1B3A3 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		CEE0B09925B478E300D1B3A3 /* DetailViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerProtocol.swift; sourceTree = "<group>"; };
 		CEE0B09E25B478EB00D1B3A3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CEE0B0A325B47CB400D1B3A3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		DA27CB9E26282A617F0F1635 /* Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig"; path = "Target Support Files/Pods-GlobalLogic-GlobalLogicUITests/Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -565,6 +567,7 @@
 		CEE0B08F25B4786800D1B3A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CEE0B0A325B47CB400D1B3A3 /* DetailView.swift */,
 				CEE0B09825B478D000D1B3A3 /* ViewController */,
 			);
 			path = View;
@@ -820,6 +823,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE0B02225B3E55300D1B3A3 /* MainViewControllerProtocol.swift in Sources */,
+				CEE0B0A425B47CB400D1B3A3 /* DetailView.swift in Sources */,
 				CEE0B01125B3E42E00D1B3A3 /* SongsTableViewCell.swift in Sources */,
 				CEE0B09F25B478EB00D1B3A3 /* DetailViewController.swift in Sources */,
 				CEE0AFE625B3E2C300D1B3A3 /* SongsRepositoryProtocol.swift in Sources */,
