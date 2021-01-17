@@ -1,6 +1,6 @@
 # GlobalLogic-Code-Challenge
 
-## Built using
+## Built using:
 #### iOS 13 as target
 #### Cocoapods as dependency manager
 #### MVP + IDD as design pattern
