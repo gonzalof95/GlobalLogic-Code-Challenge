@@ -30,6 +30,9 @@
 		CEE0AFF525B3E33500D1B3A3 /* SongsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0AFF425B3E33500D1B3A3 /* SongsModel.swift */; };
 		CEE0AFFE25B3E36900D1B3A3 /* SongsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0AFFD25B3E36900D1B3A3 /* SongsServiceProtocol.swift */; };
 		CEE0B00625B3E37200D1B3A3 /* SongsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B00525B3E37200D1B3A3 /* SongsService.swift */; };
+		CEE0B01125B3E42E00D1B3A3 /* SongsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B00F25B3E42E00D1B3A3 /* SongsTableViewCell.swift */; };
+		CEE0B01225B3E42E00D1B3A3 /* SongsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE0B01025B3E42E00D1B3A3 /* SongsTableViewCell.xib */; };
+		CEE0B01A25B3E4E900D1B3A3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B01925B3E4E900D1B3A3 /* MainView.swift */; };
 		D0D8E258B4757E35257AD836 /* Pods_GlobalLogic_GlobalLogicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271A9ABC33960C545F8542D9 /* Pods_GlobalLogic_GlobalLogicUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +89,9 @@
 		CEE0AFF425B3E33500D1B3A3 /* SongsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsModel.swift; sourceTree = "<group>"; };
 		CEE0AFFD25B3E36900D1B3A3 /* SongsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsServiceProtocol.swift; sourceTree = "<group>"; };
 		CEE0B00525B3E37200D1B3A3 /* SongsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsService.swift; sourceTree = "<group>"; };
+		CEE0B00F25B3E42E00D1B3A3 /* SongsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsTableViewCell.swift; sourceTree = "<group>"; };
+		CEE0B01025B3E42E00D1B3A3 /* SongsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongsTableViewCell.xib; sourceTree = "<group>"; };
+		CEE0B01925B3E4E900D1B3A3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DA27CB9E26282A617F0F1635 /* Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig"; path = "Target Support Files/Pods-GlobalLogic-GlobalLogicUITests/Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -288,6 +294,8 @@
 		CEE0AFE125B3E28800D1B3A3 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CEE0B00B25B3E3FC00D1B3A3 /* View */,
+				CEE0B00A25B3E3F700D1B3A3 /* Presenter */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -333,6 +341,47 @@
 				CEE0B00525B3E37200D1B3A3 /* SongsService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		CEE0B00A25B3E3F700D1B3A3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CEE0B00B25B3E3FC00D1B3A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0B00D25B3E40E00D1B3A3 /* Views */,
+				CEE0B00C25B3E40800D1B3A3 /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEE0B00C25B3E40800D1B3A3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CEE0B00D25B3E40E00D1B3A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0B01925B3E4E900D1B3A3 /* MainView.swift */,
+				CEE0B00E25B3E41A00D1B3A3 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEE0B00E25B3E41A00D1B3A3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0B00F25B3E42E00D1B3A3 /* SongsTableViewCell.swift */,
+				CEE0B01025B3E42E00D1B3A3 /* SongsTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,6 +496,7 @@
 				CEE0AFB425B3C91300D1B3A3 /* Roboto-Regular.ttf in Resources */,
 				CEE0AFB625B3C91300D1B3A3 /* loading.json in Resources */,
 				CEE0AF6325B3C83F00D1B3A3 /* Assets.xcassets in Resources */,
+				CEE0B01225B3E42E00D1B3A3 /* SongsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +624,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE0B01125B3E42E00D1B3A3 /* SongsTableViewCell.swift in Sources */,
 				CEE0AFE625B3E2C300D1B3A3 /* SongsRepositoryProtocol.swift in Sources */,
 				CEE0AFD425B3CB1900D1B3A3 /* NetworkingProtocol.swift in Sources */,
 				CEE0AF5725B3C83D00D1B3A3 /* AppDelegate.swift in Sources */,
@@ -584,6 +635,7 @@
 				CEE0AFEE25B3E2CE00D1B3A3 /* SongsRepository.swift in Sources */,
 				CEE0AFC325B3C93400D1B3A3 /* BaseViewControllerProtocol.swift in Sources */,
 				CEE0AFDC25B3CB3000D1B3A3 /* NetwrokingClient.swift in Sources */,
+				CEE0B01A25B3E4E900D1B3A3 /* MainView.swift in Sources */,
 				CEE0AFC425B3C93400D1B3A3 /* BaseViewController.swift in Sources */,
 				CEE0AFF525B3E33500D1B3A3 /* SongsModel.swift in Sources */,
 				CEE0AFBC25B3C92300D1B3A3 /* Constants.swift in Sources */,
