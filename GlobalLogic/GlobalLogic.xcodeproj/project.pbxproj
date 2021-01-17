@@ -23,6 +23,8 @@
 		CEE0AFC325B3C93400D1B3A3 /* BaseViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0AFC125B3C93400D1B3A3 /* BaseViewControllerProtocol.swift */; };
 		CEE0AFC425B3C93400D1B3A3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0AFC225B3C93400D1B3A3 /* BaseViewController.swift */; };
 		CEE0AFCB25B3C9C200D1B3A3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0AFCA25B3C9C200D1B3A3 /* MainViewController.swift */; };
+		CEE0AFD425B3CB1900D1B3A3 /* NetworkingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0AFD325B3CB1900D1B3A3 /* NetworkingProtocol.swift */; };
+		CEE0AFDC25B3CB3000D1B3A3 /* NetwrokingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0AFDB25B3CB3000D1B3A3 /* NetwrokingClient.swift */; };
 		D0D8E258B4757E35257AD836 /* Pods_GlobalLogic_GlobalLogicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271A9ABC33960C545F8542D9 /* Pods_GlobalLogic_GlobalLogicUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,8 @@
 		CEE0AFC125B3C93400D1B3A3 /* BaseViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewControllerProtocol.swift; sourceTree = "<group>"; };
 		CEE0AFC225B3C93400D1B3A3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CEE0AFCA25B3C9C200D1B3A3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CEE0AFD325B3CB1900D1B3A3 /* NetworkingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProtocol.swift; sourceTree = "<group>"; };
+		CEE0AFDB25B3CB3000D1B3A3 /* NetwrokingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwrokingClient.swift; sourceTree = "<group>"; };
 		DA27CB9E26282A617F0F1635 /* Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig"; path = "Target Support Files/Pods-GlobalLogic-GlobalLogicUITests/Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -245,9 +249,19 @@
 		CEE0AFC925B3C9B200D1B3A3 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				CEE0AFD225B3CB0A00D1B3A3 /* Networking */,
 				CEE0AFCA25B3C9C200D1B3A3 /* MainViewController.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		CEE0AFD225B3CB0A00D1B3A3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0AFD325B3CB1900D1B3A3 /* NetworkingProtocol.swift */,
+				CEE0AFDB25B3CB3000D1B3A3 /* NetwrokingClient.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -489,11 +503,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE0AFD425B3CB1900D1B3A3 /* NetworkingProtocol.swift in Sources */,
 				CEE0AF5725B3C83D00D1B3A3 /* AppDelegate.swift in Sources */,
 				CEE0AF5925B3C83D00D1B3A3 /* SceneDelegate.swift in Sources */,
 				CEE0AFBD25B3C92300D1B3A3 /* UIKit+Estension.swift in Sources */,
 				CEE0AF6125B3C83D00D1B3A3 /* GlobalLogic.xcdatamodeld in Sources */,
 				CEE0AFC325B3C93400D1B3A3 /* BaseViewControllerProtocol.swift in Sources */,
+				CEE0AFDC25B3CB3000D1B3A3 /* NetwrokingClient.swift in Sources */,
 				CEE0AFC425B3C93400D1B3A3 /* BaseViewController.swift in Sources */,
 				CEE0AFBC25B3C92300D1B3A3 /* Constants.swift in Sources */,
 				CEE0AFCB25B3C9C200D1B3A3 /* MainViewController.swift in Sources */,
