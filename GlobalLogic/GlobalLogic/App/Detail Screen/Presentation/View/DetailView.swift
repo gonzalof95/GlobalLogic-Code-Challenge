@@ -8,8 +8,12 @@
 import UIKit
 import PureLayout
 import SDWebImage
+import AVFoundation
 
 class DetailView: UIView {
+    var player: AVPlayer?
+    var playerItem: AVPlayerItem?
+    let playButton = CustomButton(forAutoLayout: ())
     let scrollView = UIScrollView(forAutoLayout: ())
     let containerView = UIView(forAutoLayout: ())
     let albumImageView = UIImageView(forAutoLayout: ())
@@ -26,6 +30,7 @@ class DetailView: UIView {
         containerView.addSubview(trackLabel)
         containerView.addSubview(artistLabel)
         containerView.addSubview(albumLabel)
+        containerView.addSubview(playButton)
         addSubview(scrollView)
 
         setupView()
@@ -57,6 +62,13 @@ class DetailView: UIView {
         albumLabel.font = UIFont(name: Fonts.robotoCondensed, size: 14)
         albumLabel.textColor = .white
         albumLabel.textAlignment = .center
+
+        playButton.setColor(color: .orange)
+        playButton.layer.cornerRadius = 40
+        playButton.alpha = 0.3
+        playButton.setViewShadow()
+        playButton.addTarget(self, action: #selector(playButtonTapped), for: .touchUpInside)
+        playButton.setImage(name: "play")
     }
 
     private func setupConstraints() {
@@ -75,6 +87,10 @@ class DetailView: UIView {
         albumLabel.autoPinEdge(.top, to: .bottom, of: artistLabel, withOffset: 14)
         albumLabel.autoPinEdge(.leading, to: .leading, of: containerView, withOffset: 20)
         albumLabel.autoPinEdge(.trailing, to: .trailing, of: containerView, withOffset: -20)
+
+        playButton.autoPinEdge(.top, to: .bottom, of: albumLabel, withOffset: 24)
+        playButton.autoSetDimensions(to: CGSize(width: 80, height: 80))
+        playButton.autoAlignAxis(.vertical, toSameAxisOf: containerView)
     }
 
     func configure(song: SongModel) {
@@ -83,5 +99,26 @@ class DetailView: UIView {
         artistLabel.text = song.artistName
         albumLabel.text = song.collectionName
 
+        guard let url = URL(string: song.previewUrl) else { return }
+        setupAudio(url)
+    }
+
+    private func setupAudio(_ url: URL) {
+        let playerItem : AVPlayerItem = AVPlayerItem(url: url)
+        player = AVPlayer(playerItem: playerItem)
+
+        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.frame = CGRect(x: 0, y: 0, width: 10, height: 50)
+        layer.addSublayer(playerLayer)
+    }
+
+    @objc func playButtonTapped() {
+        if player?.rate == 0 {
+            player?.play()
+            playButton.setImage(name: "pause")
+        } else {
+            player?.pause()
+            playButton.setImage(name: "play")
+        }
     }
 }
