@@ -38,6 +38,9 @@
 		CEE0B02F25B3E56500D1B3A3 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B02E25B3E56500D1B3A3 /* MainPresenter.swift */; };
 		CEE0B04425B3E79200D1B3A3 /* BaseViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B04325B3E79200D1B3A3 /* BaseViewControllerMock.swift */; };
 		CEE0B04C25B3E79D00D1B3A3 /* BaseViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B04B25B3E79D00D1B3A3 /* BaseViewControllerTest.swift */; };
+		CEE0B05B25B3E90900D1B3A3 /* SongsMockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B05A25B3E90900D1B3A3 /* SongsMockModel.swift */; };
+		CEE0B06325B3E94B00D1B3A3 /* NetworkServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B06225B3E94B00D1B3A3 /* NetworkServiceTest.swift */; };
+		CEE0B06825B3E95600D1B3A3 /* NetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B06725B3E95600D1B3A3 /* NetworkServiceMock.swift */; };
 		D0D8E258B4757E35257AD836 /* Pods_GlobalLogic_GlobalLogicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271A9ABC33960C545F8542D9 /* Pods_GlobalLogic_GlobalLogicUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +105,9 @@
 		CEE0B02E25B3E56500D1B3A3 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		CEE0B04325B3E79200D1B3A3 /* BaseViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerMock.swift; sourceTree = "<group>"; };
 		CEE0B04B25B3E79D00D1B3A3 /* BaseViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerTest.swift; sourceTree = "<group>"; };
+		CEE0B05A25B3E90900D1B3A3 /* SongsMockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsMockModel.swift; sourceTree = "<group>"; };
+		CEE0B06225B3E94B00D1B3A3 /* NetworkServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTest.swift; sourceTree = "<group>"; };
+		CEE0B06725B3E95600D1B3A3 /* NetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMock.swift; sourceTree = "<group>"; };
 		DA27CB9E26282A617F0F1635 /* Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig"; path = "Target Support Files/Pods-GlobalLogic-GlobalLogicUITests/Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -402,6 +408,7 @@
 			isa = PBXGroup;
 			children = (
 				CEE0B04125B3E77900D1B3A3 /* AppResources */,
+				CEE0B05225B3E8C700D1B3A3 /* App */,
 			);
 			path = "Unit Tests";
 			sourceTree = "<group>";
@@ -421,6 +428,72 @@
 				CEE0B04B25B3E79D00D1B3A3 /* BaseViewControllerTest.swift */,
 			);
 			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		CEE0B05225B3E8C700D1B3A3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0B05425B3E8D500D1B3A3 /* Networking */,
+				CEE0B05325B3E8CE00D1B3A3 /* MainScreen */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CEE0B05325B3E8CE00D1B3A3 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0B05725B3E8EA00D1B3A3 /* Core */,
+				CEE0B05625B3E8E400D1B3A3 /* Infrastructure */,
+				CEE0B05525B3E8DC00D1B3A3 /* Presentation */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		CEE0B05425B3E8D500D1B3A3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0B06225B3E94B00D1B3A3 /* NetworkServiceTest.swift */,
+				CEE0B06725B3E95600D1B3A3 /* NetworkServiceMock.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CEE0B05525B3E8DC00D1B3A3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CEE0B05625B3E8E400D1B3A3 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		CEE0B05725B3E8EA00D1B3A3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0B05925B3E8FA00D1B3A3 /* Model */,
+				CEE0B05825B3E8F600D1B3A3 /* Service */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CEE0B05825B3E8F600D1B3A3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CEE0B05925B3E8FA00D1B3A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0B05A25B3E90900D1B3A3 /* SongsMockModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -690,6 +763,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE0B05B25B3E90900D1B3A3 /* SongsMockModel.swift in Sources */,
+				CEE0B06325B3E94B00D1B3A3 /* NetworkServiceTest.swift in Sources */,
+				CEE0B06825B3E95600D1B3A3 /* NetworkServiceMock.swift in Sources */,
 				CEE0AF7125B3C83F00D1B3A3 /* GlobalLogicTests.swift in Sources */,
 				CEE0B04C25B3E79D00D1B3A3 /* BaseViewControllerTest.swift in Sources */,
 				CEE0B04425B3E79200D1B3A3 /* BaseViewControllerMock.swift in Sources */,
