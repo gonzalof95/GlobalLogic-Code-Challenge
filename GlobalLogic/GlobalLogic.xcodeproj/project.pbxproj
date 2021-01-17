@@ -41,6 +41,12 @@
 		CEE0B05B25B3E90900D1B3A3 /* SongsMockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B05A25B3E90900D1B3A3 /* SongsMockModel.swift */; };
 		CEE0B06325B3E94B00D1B3A3 /* NetworkServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B06225B3E94B00D1B3A3 /* NetworkServiceTest.swift */; };
 		CEE0B06825B3E95600D1B3A3 /* NetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B06725B3E95600D1B3A3 /* NetworkServiceMock.swift */; };
+		CEE0B06D25B3EAC200D1B3A3 /* SongsRepositoryProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B06C25B3EAC100D1B3A3 /* SongsRepositoryProtocolMock.swift */; };
+		CEE0B07225B3EACC00D1B3A3 /* SongsRepositoryProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B07125B3EACC00D1B3A3 /* SongsRepositoryProtocolTest.swift */; };
+		CEE0B07725B3EC7300D1B3A3 /* SongsServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B07625B3EC7300D1B3A3 /* SongsServiceTest.swift */; };
+		CEE0B07C25B3EC7F00D1B3A3 /* SongsServiceProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B07B25B3EC7F00D1B3A3 /* SongsServiceProtocolMock.swift */; };
+		CEE0B08125B4709F00D1B3A3 /* MainViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B08025B4709F00D1B3A3 /* MainViewControllerMock.swift */; };
+		CEE0B08625B470AF00D1B3A3 /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B08525B470AF00D1B3A3 /* MainPresenterTest.swift */; };
 		D0D8E258B4757E35257AD836 /* Pods_GlobalLogic_GlobalLogicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271A9ABC33960C545F8542D9 /* Pods_GlobalLogic_GlobalLogicUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +114,12 @@
 		CEE0B05A25B3E90900D1B3A3 /* SongsMockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsMockModel.swift; sourceTree = "<group>"; };
 		CEE0B06225B3E94B00D1B3A3 /* NetworkServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTest.swift; sourceTree = "<group>"; };
 		CEE0B06725B3E95600D1B3A3 /* NetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMock.swift; sourceTree = "<group>"; };
+		CEE0B06C25B3EAC100D1B3A3 /* SongsRepositoryProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsRepositoryProtocolMock.swift; sourceTree = "<group>"; };
+		CEE0B07125B3EACC00D1B3A3 /* SongsRepositoryProtocolTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsRepositoryProtocolTest.swift; sourceTree = "<group>"; };
+		CEE0B07625B3EC7300D1B3A3 /* SongsServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsServiceTest.swift; sourceTree = "<group>"; };
+		CEE0B07B25B3EC7F00D1B3A3 /* SongsServiceProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsServiceProtocolMock.swift; sourceTree = "<group>"; };
+		CEE0B08025B4709F00D1B3A3 /* MainViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerMock.swift; sourceTree = "<group>"; };
+		CEE0B08525B470AF00D1B3A3 /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
 		DA27CB9E26282A617F0F1635 /* Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig"; path = "Target Support Files/Pods-GlobalLogic-GlobalLogicUITests/Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -461,6 +473,8 @@
 		CEE0B05525B3E8DC00D1B3A3 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CEE0B08025B4709F00D1B3A3 /* MainViewControllerMock.swift */,
+				CEE0B08525B470AF00D1B3A3 /* MainPresenterTest.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -468,6 +482,8 @@
 		CEE0B05625B3E8E400D1B3A3 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				CEE0B06C25B3EAC100D1B3A3 /* SongsRepositoryProtocolMock.swift */,
+				CEE0B07125B3EACC00D1B3A3 /* SongsRepositoryProtocolTest.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -484,6 +500,8 @@
 		CEE0B05825B3E8F600D1B3A3 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				CEE0B07625B3EC7300D1B3A3 /* SongsServiceTest.swift */,
+				CEE0B07B25B3EC7F00D1B3A3 /* SongsServiceProtocolMock.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -763,10 +781,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE0B07725B3EC7300D1B3A3 /* SongsServiceTest.swift in Sources */,
+				CEE0B07225B3EACC00D1B3A3 /* SongsRepositoryProtocolTest.swift in Sources */,
 				CEE0B05B25B3E90900D1B3A3 /* SongsMockModel.swift in Sources */,
 				CEE0B06325B3E94B00D1B3A3 /* NetworkServiceTest.swift in Sources */,
 				CEE0B06825B3E95600D1B3A3 /* NetworkServiceMock.swift in Sources */,
+				CEE0B06D25B3EAC200D1B3A3 /* SongsRepositoryProtocolMock.swift in Sources */,
+				CEE0B07C25B3EC7F00D1B3A3 /* SongsServiceProtocolMock.swift in Sources */,
+				CEE0B08625B470AF00D1B3A3 /* MainPresenterTest.swift in Sources */,
 				CEE0AF7125B3C83F00D1B3A3 /* GlobalLogicTests.swift in Sources */,
+				CEE0B08125B4709F00D1B3A3 /* MainViewControllerMock.swift in Sources */,
 				CEE0B04C25B3E79D00D1B3A3 /* BaseViewControllerTest.swift in Sources */,
 				CEE0B04425B3E79200D1B3A3 /* BaseViewControllerMock.swift in Sources */,
 			);
