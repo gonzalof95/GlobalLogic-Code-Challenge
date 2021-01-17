@@ -52,4 +52,9 @@ class MainPresenter {
             executeGet(offset: self.timesRecalled * 20, isReloadingData: isReloadingData, search: search)
         }
     }
+
+    func rowTapped(song: SongModel) {
+        let presenter = DetailPresenter(song: song)
+        delegate?.pushNextViewController(DetailViewController(with: presenter, songData: song))
+    }
 }
