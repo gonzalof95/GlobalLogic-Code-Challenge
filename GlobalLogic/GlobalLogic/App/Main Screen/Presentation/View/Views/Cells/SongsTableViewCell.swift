@@ -23,7 +23,7 @@ class SongsTableViewCell: UITableViewCell {
     public func configure(with song: SongModel) {
         let imageUrl = song.trackViewUrl
 
-        albumImageView.sd_setImage(with: URL(string: imageUrl), placeholderImage: UIImage(named: "blank"))
+        albumImageView.sd_setImage(with: URL(string: imageUrl))
         albumImageView.contentMode = .scaleAspectFill
 
         trackLabel.text = song.trackName

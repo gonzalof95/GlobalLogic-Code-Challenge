@@ -13,7 +13,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         if let windowScene = scene as? UIWindowScene {
-            let navigationController = UINavigationController(rootViewController: MainViewController())
+            let repository = SongsRepository()
+            let service = SongsService(repository: repository)
+            let presenter = MainPresenter(service: service)
+            let navigationController = UINavigationController(rootViewController: MainViewController(with: presenter))
             navigationController.navigationBar.prefersLargeTitles = true
 
             let window = UIWindow(windowScene: windowScene)
