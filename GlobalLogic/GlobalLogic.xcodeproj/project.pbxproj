@@ -36,6 +36,8 @@
 		CEE0B02225B3E55300D1B3A3 /* MainViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B02125B3E55300D1B3A3 /* MainViewControllerProtocol.swift */; };
 		CEE0B02A25B3E55E00D1B3A3 /* MainViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B02925B3E55E00D1B3A3 /* MainViewController+Extensions.swift */; };
 		CEE0B02F25B3E56500D1B3A3 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B02E25B3E56500D1B3A3 /* MainPresenter.swift */; };
+		CEE0B04425B3E79200D1B3A3 /* BaseViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B04325B3E79200D1B3A3 /* BaseViewControllerMock.swift */; };
+		CEE0B04C25B3E79D00D1B3A3 /* BaseViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0B04B25B3E79D00D1B3A3 /* BaseViewControllerTest.swift */; };
 		D0D8E258B4757E35257AD836 /* Pods_GlobalLogic_GlobalLogicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271A9ABC33960C545F8542D9 /* Pods_GlobalLogic_GlobalLogicUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +100,8 @@
 		CEE0B02125B3E55300D1B3A3 /* MainViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerProtocol.swift; sourceTree = "<group>"; };
 		CEE0B02925B3E55E00D1B3A3 /* MainViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Extensions.swift"; sourceTree = "<group>"; };
 		CEE0B02E25B3E56500D1B3A3 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		CEE0B04325B3E79200D1B3A3 /* BaseViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerMock.swift; sourceTree = "<group>"; };
+		CEE0B04B25B3E79D00D1B3A3 /* BaseViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerTest.swift; sourceTree = "<group>"; };
 		DA27CB9E26282A617F0F1635 /* Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig"; path = "Target Support Files/Pods-GlobalLogic-GlobalLogicUITests/Pods-GlobalLogic-GlobalLogicUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,6 +194,7 @@
 		CEE0AF6F25B3C83F00D1B3A3 /* GlobalLogicTests */ = {
 			isa = PBXGroup;
 			children = (
+				CEE0B04025B3E77300D1B3A3 /* Unit Tests */,
 				CEE0AF7025B3C83F00D1B3A3 /* GlobalLogicTests.swift */,
 				CEE0AF7225B3C83F00D1B3A3 /* Info.plist */,
 			);
@@ -391,6 +396,31 @@
 				CEE0B01025B3E42E00D1B3A3 /* SongsTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		CEE0B04025B3E77300D1B3A3 /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0B04125B3E77900D1B3A3 /* AppResources */,
+			);
+			path = "Unit Tests";
+			sourceTree = "<group>";
+		};
+		CEE0B04125B3E77900D1B3A3 /* AppResources */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0B04225B3E78000D1B3A3 /* BaseViewController */,
+			);
+			path = AppResources;
+			sourceTree = "<group>";
+		};
+		CEE0B04225B3E78000D1B3A3 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0B04325B3E79200D1B3A3 /* BaseViewControllerMock.swift */,
+				CEE0B04B25B3E79D00D1B3A3 /* BaseViewControllerTest.swift */,
+			);
+			path = BaseViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -661,6 +691,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE0AF7125B3C83F00D1B3A3 /* GlobalLogicTests.swift in Sources */,
+				CEE0B04C25B3E79D00D1B3A3 /* BaseViewControllerTest.swift in Sources */,
+				CEE0B04425B3E79200D1B3A3 /* BaseViewControllerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
